@@ -59,10 +59,11 @@ body {
 
 .main-area {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 80px;
-  margin: 90px auto 0;
-  width: 1200px;
+  margin: 90px auto;
+  /* width: 1200px; */
+  flex-wrap: wrap;
 }
 
 .main-title {
@@ -87,6 +88,11 @@ body {
   display: flex;
   gap: 16px;
 }
+
+.text-area{
+  margin-top: 10rem;
+}
+
 
 .text-area button {
   margin-top: 32px;
@@ -173,11 +179,14 @@ footer {
 }
 
 .form-container {
+  margin: 2rem auto;
   max-width: 400px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 20px;
+  background-image: url(./images/form-bg.png);
+  background-size: cover;
 }
 .form-group {
   margin-bottom: 15px;
@@ -186,6 +195,8 @@ footer {
   display: block;
   margin-bottom: 5px;
   color: whitesmoke;
+  font-family: "Press Start 2P", cursive;
+
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -194,20 +205,28 @@ footer {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  background-blend-mode: overlay;
+  color: whitesmoke;
+  font-weight: bolder;
 }
 .form-group textarea {
   resize: vertical;
+  color: white;
+
 }
 .form-group input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #7c3aed;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+
 }
 .form-group input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #7c01b4;
 }
 
 /* media icons  */
@@ -246,6 +265,39 @@ footer {
   width: 70%;
 
 }
+
+
+
+/* index mobile version  */
+
+
+
+@media (max-width: 600px) {
+  /* Add styles specific to smaller screens here */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar-links{
+   margin: 1rem auto;
+  
+  }
+
+  .buttons-main {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
