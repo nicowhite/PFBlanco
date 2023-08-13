@@ -60,9 +60,7 @@ body {
 .main-area {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 80px;
-  /* padding-left: 224px; */
   margin: 90px auto 0;
   width: 1200px;
 }
@@ -70,7 +68,7 @@ body {
 .main-title {
   font-size: 80px;
   font-weight: 700;
-  line-height: 72px; /* 120% */
+  line-height: 72px;
   letter-spacing: -1.5px;
   color: #fff;
   font-family: "VT323", monospace;
@@ -85,7 +83,7 @@ body {
   margin-top: 16px;
 }
 
-.buttonsMain {
+.buttons-main {
   display: flex;
   gap: 16px;
 }
@@ -99,14 +97,14 @@ body {
   font-weight: 600;
 }
 
-.startButton {
+.start-button {
   color: #fff;
   background-color: #7c3aed;
   border-radius: 8px;
   border-color: #7c3aed;
 }
 
-.videoButton {
+.video-button {
   color: #7c3aed;
   background-color: transparent;
   display: flex;
@@ -217,21 +215,41 @@ footer {
 .media-icons {
   bottom: 0;
   right: 0;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px; 
   display: flex;
-  justify-content: flex-end; /* Align icons to the right */
+  justify-content: flex-end; 
   align-items: center;
-  width: auto; /* Adjust width as needed */
+  width: auto; 
 }
 
 .media-icons a {
-  margin: 0 5px; /* Adjust margin as needed to separate icons */
+  margin: 0 5px; 
 }
 
 .media-icons img {
   height: 20px;
   width: 20px;
 }
+
+
+
+.carousel-title{
+  text-align: center;
+  margin-top: 10rem;
+  font-family: "VT323", monospace;
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+
+#carouselExampleFade {
+  margin: 1rem auto;
+  width: 70%;
+
+}
+
+
+
+
 
 /* ------- MONSTERS HTML ------- */
 
