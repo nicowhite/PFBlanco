@@ -319,6 +319,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 8rem;
 }
 
 .monster-container span {
@@ -343,3 +344,11 @@ footer {
   width: 70%;
   text-align: center
 }
+
+.video-carousel-title{
+  color: tomato;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+}
+
+
