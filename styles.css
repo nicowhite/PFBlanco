@@ -252,7 +252,7 @@ footer {
 
 
 
-.carousel-title{
+.os-title{
   text-align: center;
   margin-top: 10rem;
   font-family: "VT323", monospace;
@@ -273,7 +273,7 @@ footer {
 
 
 @media (max-width: 600px) {
-  /* Add styles specific to smaller screens here */
+
   .navbar {
     display: flex;
     justify-content: center;
@@ -301,15 +301,24 @@ footer {
 
 
 
-
-
 /* ------- MONSTERS HTML ------- */
+
+
+.monstr-title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: "VT323", monospace;
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+
+
 
 .monster-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 5rem;
+  justify-content: center;
 }
 
 .monster-container span {
@@ -317,3 +326,20 @@ footer {
   color: #7c3aed;
 }
 
+.monstr {
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+.monstr img {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel-monster{
+  margin: 1rem auto;
+  width: 70%;
+  text-align: center
+}
