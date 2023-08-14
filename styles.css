@@ -301,6 +301,7 @@ footer {
 
 
 
+
 /* ------- MONSTERS HTML ------- */
 
 
@@ -338,6 +339,8 @@ footer {
   width: 200px;
   height: 200px;
 }
+
+/* video carousel  */
 
 .carousel-monster{
   margin: 1rem auto;
