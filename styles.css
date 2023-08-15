@@ -331,25 +331,45 @@ footer {
 
 /* grid gallery  */
 
+.gallery-title{
+  text-align: center;
+  margin-top: 10rem;
+  font-family: "Press Start 2P", cursive;
+  color: #7c3aed;
+}
+
+
+
 .gallery-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 1px;
-  margin-top: 200px;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+	/* grid-auto-rows: var(--row-height); */
+	gap: 1rem;
+  margin: 2rem auto;
+  width: 60%;
 
+  
 }
 
-.gallery-container img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-  /* height: auto; */
-  display: inline-block;
+.gallery-container>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.gallery-container > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.image-grid-col-2 {
+	grid-column: span 2;
 }
 
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 700px) {
+	.gallery-container {
+	width: 100%;
+	}
+}
