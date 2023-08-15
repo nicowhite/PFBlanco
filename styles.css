@@ -89,10 +89,9 @@ body {
   gap: 16px;
 }
 
-.text-area{
+.text-area {
   margin-top: 10rem;
 }
-
 
 .text-area button {
   margin-top: 32px;
@@ -196,7 +195,6 @@ footer {
   margin-bottom: 5px;
   color: whitesmoke;
   font-family: "Press Start 2P", cursive;
-
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -205,7 +203,10 @@ footer {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
   background-blend-mode: overlay;
   color: whitesmoke;
   font-weight: bolder;
@@ -213,7 +214,6 @@ footer {
 .form-group textarea {
   resize: vertical;
   color: white;
-
 }
 .form-group input[type="submit"] {
   background-color: #7c3aed;
@@ -223,7 +223,6 @@ footer {
   border-radius: 3px;
   cursor: pointer;
   font-family: "Press Start 2P", cursive;
-
 }
 .form-group input[type="submit"]:hover {
   background-color: #7c01b4;
@@ -234,15 +233,15 @@ footer {
 .media-icons {
   bottom: 0;
   right: 0;
-  padding: 10px; 
+  padding: 10px;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
-  width: auto; 
+  width: auto;
 }
 
 .media-icons a {
-  margin: 0 5px; 
+  margin: 0 5px;
 }
 
 .media-icons img {
@@ -250,9 +249,7 @@ footer {
   width: 20px;
 }
 
-
-
-.os-title{
+.os-title {
   text-align: center;
   margin-top: 10rem;
   font-family: "VT323", monospace;
@@ -263,26 +260,19 @@ footer {
 #carouselExampleFade {
   margin: 1rem auto;
   width: 70%;
-
 }
-
-
 
 /* index mobile version  */
 
-
-
 @media (max-width: 600px) {
-
   .navbar {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
-  .navbar-links{
-   margin: 1rem auto;
-  
+  .navbar-links {
+    margin: 1rem auto;
   }
 
   .buttons-main {
@@ -290,20 +280,7 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------- MONSTERS HTML ------- */
-
 
 .monstr-title {
   text-align: center;
@@ -313,8 +290,6 @@ footer {
   font-size: 3.5rem;
   color: whitesmoke;
 }
-
-
 
 .monster-container {
   display: flex;
@@ -342,21 +317,39 @@ footer {
 
 /* video carousel  */
 
-.carousel-monster{
+.carousel-monster {
   margin: 1rem auto;
   width: 70%;
-  text-align: center
+  text-align: center;
 }
 
-.video-carousel-title{
+.video-carousel-title {
   color: tomato;
   font-family: "VT323", monospace;
   font-size: 2rem;
 }
 
+/* grid gallery  */
 
-/* gallery  */
+.gallery-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1px;
+  margin-top: 200px;
 
+}
 
+.gallery-container img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  /* height: auto; */
+  display: inline-block;
+}
 
+.gallery-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
