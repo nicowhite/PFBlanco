@@ -367,7 +367,7 @@ footer {
 	grid-row: span 2;
 }
 
-/* Anything udner 1024px */
+
 @media screen and (max-width: 700px) {
 	.gallery-container {
 	width: 100%;
