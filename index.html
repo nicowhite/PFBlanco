@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- link de boostrap  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+  <!-- link de boostrap  -->
 
-    <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
-    <!-- fonts de google  -->
+  <link rel="stylesheet" href="./styles.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=VT323"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./images/logo.png" />
-    <title>Pixel Shop!</title>
-  </head>
+  <!-- fonts de google  -->
 
-  <body>
-    <!-- navigation bar  -->
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./images/logo.png" />
+  <title>Pixel Shop!</title>
+</head>
 
+<body>
+  <!-- navigation bar  -->
+
+  <header>
     <nav class="navbar">
       <div class="logo-container">
         <div>
@@ -60,9 +46,10 @@
         <a href="">Our Media</a>
       </div>
     </nav>
+  </header>
 
-    <!-- main area -->
-
+  <!-- main area -->
+  <main>
     <div class="main-area">
       <div class="text-area">
         <div class="main-title">
@@ -84,9 +71,11 @@
         <img src="./images/main-img.png" alt="main logo" />
       </div>
     </div>
+  </main>
 
-    <!-- pixels section -->
+  <!-- pixels section -->
 
+  <section>
     <div class="header">
       <h1>Our Pixels.</h1>
     </div>
@@ -133,11 +122,11 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- boostrap carrousel  -->
 
-    <!-- boostrap carrousel  -->
-
-
+  <section>
     <h3 class="os-title">Some of our finest works!</h3>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -170,94 +159,59 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </section>
 
 
 
 
+  <!-- footer and form -->
 
 
 
 
+  <footer>
+    <h4 class="os-title">Talk to us!</h4>
+    <div class="form-container">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+
+    <div class="media-icons">
+      <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="instragram" />
+      </a>
+      <a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook" />
+      </a>
+      <a href="https://twitter.com"><img src="./images/twitter.png" alt="twitter" />
+      </a>
+    </div>
+  </footer>
 
 
 
 
+  <!-- script de bt  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
 
-
-
-
-
-
-
-    <!-- footer and form -->
-
-
-
-
-    <footer>
-
-      <h4 class="os-title">Talk to us!</h4>
-      <div class="form-container">
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      <div class="media-icons">
-        <a href="https://www.instagram.com"
-          ><img src="./images/instagram.png" alt="instragram" />
-        </a>
-        <a href="https://facebook.com"
-          ><img src="./images/facebook.png" alt="facebook" />
-        </a>
-        <a href="https://twitter.com"
-          ><img src="./images/twitter.png" alt="twitter" />
-        </a>
-      </div>
-    </footer>
-
- 
-    
-   
-    <!-- script de bt  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
