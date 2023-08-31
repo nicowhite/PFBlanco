@@ -373,3 +373,24 @@ footer {
 	width: 100%;
 	}
 }
+
+
+
+
+/* food html  */
+
+
+.main-food{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main-food h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  color: #7c01b4;
+}
