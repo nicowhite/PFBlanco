@@ -1,0 +1,82 @@
+footer {
+    margin-top: 10rem;
+  
+    .form-container {
+      margin: 2rem auto;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 20px;
+      background-image: url(./images/form-bg.png);
+      background-size: cover;
+  
+      form {
+        .form-group {
+          margin-bottom: 15px;
+  
+          label {
+            display: block;
+            margin-bottom: 5px;
+            color: whitesmoke;
+            font-family: "Press Start 2P", cursive;
+          }
+  
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background: linear-gradient(
+              rgba(255, 255, 255, 0.1),
+              rgba(255, 255, 255, 0.1)
+            );
+            background-blend-mode: overlay;
+            color: whitesmoke;
+            font-weight: bolder;
+  
+            &.textarea {
+              resize: vertical;
+              color: white;
+            }
+          }
+  
+          input[type="submit"] {
+            background-color: #7c3aed;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: "Press Start 2P", cursive;
+  
+            &:hover {
+              background-color: #7c01b4;
+            }
+          }
+        }
+      }
+    }
+  
+    .media-icons {
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: auto;
+  
+      a {
+        margin: 0 5px;
+      }
+  
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  

@@ -1,0 +1,119 @@
+@import "./base/reset";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./layout/main.scss";
+
+  
+  /* grid gallery  */
+  
+  // .gallery-title {
+  //   text-align: center;
+  //   margin-top: 10rem;
+  //   font-family: "Press Start 2P", cursive;
+  //   color: #7c3aed;
+  // }
+  
+  // .gallery-container {
+  //   box-sizing: border-box;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr;
+  //   gap: 1rem;
+  //   margin: 2rem auto;
+  //   width: 80%;
+  // }
+  
+  // .gallery-container > img {
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
+  
+  // .image-grid-col-2 {
+  //   grid-column: span 2;
+  // }
+  
+  // .image-grid-row-2 {
+  //   grid-row: span 2;
+  // }
+  
+
+
+
+
+  /* food html  */
+  
+  .main-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .main-food h1 {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7c01b4;
+  }
+  
+  .food-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .food-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; /* Gap between items */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  }
+  
+  .food-container img {
+    max-width: 100%;
+  }
+  
+  .food-title {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Press Start 2P", cursive;
+    color: #7c3aed;
+  }
+  @media (max-width: 768px) {
+    .food-categories {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  }
+  
+  
+  
+  /* anime html  */
+  
+  
+  .anime-title {
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "VT323", monospace;
+    font-size: 5rem;
+    color: #7c3aed;
+  }
+  
+  .pixel-song{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .op-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  
+  }

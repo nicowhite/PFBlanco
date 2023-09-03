@@ -1,0 +1,252 @@
+// index main area
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 90px auto;
+  flex-wrap: wrap;
+
+  .text-area {
+    margin-top: 10rem;
+
+    .main-title {
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 72px;
+      letter-spacing: -1.5px;
+      color: #fff;
+      font-family: "VT323", monospace;
+    }
+
+    .main-text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      color: #bbb5d4;
+      margin-top: 16px;
+    }
+
+    .buttons-main {
+      display: flex;
+      gap: 16px;
+
+      button {
+        margin-top: 32px;
+        width: 138px;
+        height: 56px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .start-button {
+        color: #fff;
+        background-color: #7c3aed;
+        border-radius: 8px;
+        border-color: #7c3aed;
+      }
+
+      .video-button {
+        color: #7c3aed;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        border-style: none;
+      }
+    }
+  }
+}
+
+// index card section
+
+section {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    color: #fff;
+  }
+
+  .carta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    .carta {
+      flex: 1;
+      max-width: 300px;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      p {
+        color: #bbb5d4;
+      }
+
+      .btn-container {
+        margin-top: 1rem;
+        height: 20px;
+
+        a {
+          padding: 0.75rem;
+          height: 200px;
+          font-size: 16px;
+          text-align: center;
+          font-weight: 600;
+          background-color: #7c3aed;
+          border-radius: 8px;
+          color: black;
+          font-family: "Press Start 2P", cursive;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #7c01b4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// carousel
+
+.os-title {
+  text-align: center;
+  margin-top: 10rem;
+  font-family: "VT323", monospace;
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+.carousel {
+  margin: 1rem auto;
+  width: 70%;
+}
+
+// index mobile
+
+@media (max-width: 600px) {
+  .main-area {
+    text-align: center;
+
+    .buttons-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .carta-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .carta {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+// monster html
+
+main {
+  .monstr-title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: "VT323", monospace;
+    font-size: 3.5rem;
+    color: whitesmoke;
+  }
+  .monster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8rem;
+
+    .monstr {
+      max-width: 300px;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      color: whitesmoke;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      span {
+        font-weight: bolder;
+        color: #7c3aed;
+      }
+    }
+  }
+}
+
+// video monster corousel
+
+.carousel-monster {
+  margin: 1rem auto;
+  width: 70%;
+  text-align: center;
+
+  .video-carousel-title {
+    color: tomato;
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+  }
+}
+
+// monster gallery grid
+
+section {
+  .gallery-title {
+    text-align: center;
+    margin-top: 10rem;
+    font-family: "Press Start 2P", cursive;
+    color: #7c3aed;
+  }
+
+  .gallery-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem auto;
+    width: 80%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-grid-col-2 {
+      grid-column: span 2;
+    }
+  }
+}
+
+// mobile monster 
+
+@media (max-width: 600px) {
+  section .gallery-container{
+     display: grid;
+     grid-template-columns: 1fr;
+
+     .image-grid-col-2 {
+       grid-column: span 1;
+   }
+ }
+ }
+

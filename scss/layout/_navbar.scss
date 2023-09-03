@@ -1,0 +1,21 @@
+.navbar {
+  background-color: transparent;
+
+  .navbar-brand {
+    font-family: "Press Start 2P", cursive;
+  }
+  .container-fluid {
+    button {
+      background-color: #7c3aed;
+      opacity: 0.6;
+    }
+  }
+
+  .nav-link {
+    color: #fff;
+
+    &:hover {
+      color: #7c3aed;
+    }
+  }
+}
