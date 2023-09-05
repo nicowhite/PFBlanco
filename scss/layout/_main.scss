@@ -16,7 +16,7 @@
       line-height: 72px;
       letter-spacing: -1.5px;
       color: #fff;
-      font-family: "VT323", monospace;
+      font-family: $primary-title;
     }
 
     .main-text {
@@ -31,6 +31,9 @@
     .buttons-main {
       display: flex;
       gap: 16px;
+        a {
+          text-decoration: none;
+        }
 
       button {
         margin-top: 32px;
@@ -133,17 +136,18 @@ section {
 
 // index mobile
 
-@media (max-width: 600px) {
-  .main-area {
+.main-area  {
+  @include mobile 
+  {
     text-align: center;
 
     .buttons-main {
-      @include flex;
+      @include flex-center;
     }
   }
   .carta-container {
     margin-bottom: 1rem;
-    @include flex;
+    @include flex-center;
     flex-direction: column;
     .carta {
       margin-bottom: 3rem;
@@ -234,8 +238,9 @@ section {
 
 // mobile monster
 
-@media (max-width: 600px) {
+
   section .gallery-container {
+    @include mobile {
     display: grid;
     grid-template-columns: 1fr;
 
@@ -256,9 +261,7 @@ section {
 }
 
 .main-food {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   margin-top: 6rem;
   margin-bottom: 6rem;
   flex-wrap: wrap;
@@ -272,23 +275,20 @@ section {
 }
 
 .food-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   .food-categories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; /* Gap between items */
-    justify-content: center; /* Center horizontally */
-    align-items: center;
+    gap: 1rem; 
     img {
       max-width: 100%;
     }
   }
 }
 
-@media (max-width: 768px) {
+
   .food-container {
+    @include mobile {
     .food-categories {
       grid-template-columns: 1fr; /* Single column */
     }

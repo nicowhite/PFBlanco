@@ -1,6 +1,20 @@
 
-@mixin flex {
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+@mixin button-style {
+    width: 138px;
+    height: 56px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  @mixin mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
