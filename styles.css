@@ -175,21 +175,16 @@ section .carta-container {
   width: 70%; }
 
 @media (max-width: 600px) {
+  section .carta-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center; }
   .main-area {
     text-align: center; }
-    .main-area .buttons-main {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-
-.main-area .carta-container {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .main-area .carta-container .carta {
-    margin-bottom: 3rem; }
+  .buttons-main {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 main .monstr-title {
   text-align: center;

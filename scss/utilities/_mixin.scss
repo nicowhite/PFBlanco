@@ -13,6 +13,13 @@
     font-weight: 600;
   }
 
+  @mixin grid-column{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+
   @mixin mobile {
     @media (max-width: 600px) {
       @content;

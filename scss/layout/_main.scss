@@ -31,9 +31,9 @@
     .buttons-main {
       display: flex;
       gap: 16px;
-        a {
-          text-decoration: none;
-        }
+      a {
+        text-decoration: none;
+      }
 
       button {
         margin-top: 32px;
@@ -136,24 +136,42 @@ section {
 
 // index mobile
 
-.main-area  {
-  @include mobile 
-  {
-    text-align: center;
-
-    .buttons-main {
-      @include flex-center;
-    }
+@media (max-width: 600px) {
+  section .carta-container {
+    @include grid-column;
+    place-items: center;
   }
-  .carta-container {
-    margin-bottom: 1rem;
+
+  .main-area {
+    text-align: center;
+  }
+
+  .buttons-main {
     @include flex-center;
-    flex-direction: column;
-    .carta {
-      margin-bottom: 3rem;
-    }
   }
 }
+
+// .main-area  {
+//   @include mobile
+//   {
+//     text-align: center;
+
+//     .buttons-main {
+//       @include flex-center;
+//     }
+//   }
+//   section .carta-container {
+//     background-color: red;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     margin-bottom: 1rem;
+//     @include flex-center;
+//     flex-direction: column;
+//     .carta {
+//       margin-bottom: 3rem;
+//     }
+//   }
+// }
 
 // monster html
 
@@ -238,11 +256,9 @@ section {
 
 // mobile monster
 
-
-  section .gallery-container {
-    @include mobile {
-    display: grid;
-    grid-template-columns: 1fr;
+section .gallery-container {
+  @include mobile {
+    @include grid-column;
 
     .image-grid-col-2 {
       grid-column: span 1;
@@ -279,16 +295,15 @@ section {
   .food-categories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; 
+    gap: 1rem;
     img {
       max-width: 100%;
     }
   }
 }
 
-
-  .food-container {
-    @include mobile {
+.food-container {
+  @include mobile {
     .food-categories {
       grid-template-columns: 1fr; /* Single column */
     }
