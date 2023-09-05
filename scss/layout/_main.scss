@@ -138,18 +138,13 @@ section {
     text-align: center;
 
     .buttons-main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex;
     }
   }
   .carta-container {
     margin-bottom: 1rem;
-    display: flex;
+    @include flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     .carta {
       margin-bottom: 3rem;
     }
@@ -237,16 +232,88 @@ section {
   }
 }
 
-// mobile monster 
+// mobile monster
 
 @media (max-width: 600px) {
-  section .gallery-container{
-     display: grid;
-     grid-template-columns: 1fr;
+  section .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
 
-     .image-grid-col-2 {
-       grid-column: span 1;
-   }
- }
- }
+    .image-grid-col-2 {
+      grid-column: span 1;
+    }
+  }
+}
 
+//  food main
+
+.food-title {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: "Press Start 2P", cursive;
+  color: #7c3aed;
+}
+
+.main-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  h1 {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7c01b4;
+  }
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .food-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; /* Gap between items */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .food-container {
+    .food-categories {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  }
+}
+
+// anime page
+
+.anime-title {
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "VT323", monospace;
+  font-size: 5rem;
+  color: #7c3aed;
+}
+
+.pixel-song {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.op-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
