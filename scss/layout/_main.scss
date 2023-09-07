@@ -46,13 +46,13 @@
 
       .start-button {
         color: #fff;
-        background-color: #7c3aed;
+        background-color: $main-color;
         border-radius: 8px;
-        border-color: #7c3aed;
+        border-color: $main-color;
       }
 
       .video-button {
-        color: #7c3aed;
+        color: $main-color;
         background-color: transparent;
         display: flex;
         align-items: center;
@@ -105,14 +105,14 @@ section {
           font-size: 16px;
           text-align: center;
           font-weight: 600;
-          background-color: #7c3aed;
+          background-color: $main-color;
           border-radius: 8px;
           color: black;
-          font-family: "Press Start 2P", cursive;
+          font-family: $secondary-title;
           text-decoration: none;
 
           &:hover {
-            background-color: #7c01b4;
+            background-color: $secondary-color;
           }
         }
       }
@@ -125,7 +125,7 @@ section {
 .os-title {
   text-align: center;
   margin-top: 10rem;
-  font-family: "VT323", monospace;
+  font-family: $primary-title;
   font-size: 3.5rem;
   color: whitesmoke;
 }
@@ -180,7 +180,7 @@ main {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-family: "VT323", monospace;
+    font-family: $primary-title;
     font-size: 3.5rem;
     color: whitesmoke;
   }
@@ -204,7 +204,7 @@ main {
 
       span {
         font-weight: bolder;
-        color: #7c3aed;
+        color: $main-color;
       }
     }
   }
@@ -219,7 +219,7 @@ main {
 
   .video-carousel-title {
     color: tomato;
-    font-family: "VT323", monospace;
+    font-family: $primary-title;
     font-size: 2rem;
   }
 }
@@ -230,8 +230,8 @@ section {
   .gallery-title {
     text-align: center;
     margin-top: 10rem;
-    font-family: "Press Start 2P", cursive;
-    color: #7c3aed;
+    font-family: $secondary-title;
+    color: $main-color;
   }
 
   .gallery-container {
@@ -312,8 +312,8 @@ section .gallery-container {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  font-family: "Press Start 2P", cursive;
-  color: #7c3aed;
+  font-family: $secondary-title;
+  color: $main-color;
 }
 
 .main-food {
@@ -323,10 +323,10 @@ section .gallery-container {
   flex-wrap: wrap;
   gap: 2rem;
   h1 {
-    font-family: "Press Start 2P", cursive;
+    font-family: $secondary-title;
     text-align: center;
     font-size: 1.5rem;
-    color: #7c01b4;
+    color: $secondary-color;
   }
 }
 
@@ -355,9 +355,9 @@ section .gallery-container {
 .anime-title {
   text-align: center;
   margin-top: 5rem;
-  font-family: "VT323", monospace;
+  font-family: $primary-title;
   font-size: 5rem;
-  color: #7c3aed;
+  color: $main-color;
 }
 
 .pixel-song {
