@@ -45,9 +45,7 @@
       }
 
       .start-button {
-        color: #fff;
-        background-color: $main-color;
-        border-radius: 8px;
+        @extend %common-button-style; 
         border-color: $main-color;
       }
 

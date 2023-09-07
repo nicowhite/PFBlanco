@@ -1,3 +1,8 @@
+.main-area .text-area .buttons-main .start-button {
+  color: #fff;
+  background-color: #7c3aed;
+  border-radius: 8px; }
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -144,9 +149,6 @@ footer {
         text-align: center;
         font-weight: 600; }
       .main-area .text-area .buttons-main .start-button {
-        color: #fff;
-        background-color: #7c3aed;
-        border-radius: 8px;
         border-color: #7c3aed; }
       .main-area .text-area .buttons-main .video-button {
         color: #7c3aed;
