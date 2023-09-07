@@ -23,8 +23,7 @@ body {
   position: relative;
   color: #7c3aed;
   text-decoration: none;
-  transition: color 0.3s ease;
-  /* Color transition on hover */ }
+  transition: color 0.3s ease; }
 
 .animated-underline::before {
   content: "";
@@ -36,16 +35,13 @@ body {
   left: 0;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.8s ease;
-  /* Underline animation */ }
+  transition: transform 0.8s ease; }
 
 .animated-underline:hover {
-  color: #ff6600;
-  /* Change text color on hover */ }
+  color: #ff6600; }
 
 .animated-underline:hover::before {
   transform: scaleX(1);
-  /* Expand the underline on hover */
   transform-origin: bottom left; }
 
 @media (max-width: 600px) {
@@ -53,7 +49,6 @@ body {
     transform-origin: left; }
   .animated-underline:hover::before {
     transform: scaleX(0.2);
-    /* Expand the underline on hover */
     transform-origin: left; } }
 
 footer {
