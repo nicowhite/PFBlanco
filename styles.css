@@ -19,6 +19,43 @@ body {
     .navbar .nav-link:hover {
       color: #7c3aed; }
 
+.animated-underline {
+  position: relative;
+  color: #7c3aed;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* Color transition on hover */ }
+
+.animated-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #7c3aed;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.8s ease;
+  /* Underline animation */ }
+
+.animated-underline:hover {
+  color: #ff6600;
+  /* Change text color on hover */ }
+
+.animated-underline:hover::before {
+  transform: scaleX(1);
+  /* Expand the underline on hover */
+  transform-origin: bottom left; }
+
+@media (max-width: 600px) {
+  .animated-underline::before {
+    transform-origin: left; }
+  .animated-underline:hover::before {
+    transform: scaleX(0.2);
+    /* Expand the underline on hover */
+    transform-origin: left; } }
+
 footer {
   margin-top: 10rem; }
   footer .form-container {
@@ -235,12 +272,35 @@ section .gallery-container {
   gap: 1rem;
   margin: 2rem auto;
   width: 80%; }
+  section .gallery-container .img-gal-container {
+    position: relative; }
+  section .gallery-container .imgbruno:hover {
+    transition: all 1s ease;
+    opacity: 1;
+    filter: blur(3px) grayscale(100%); }
+    section .gallery-container .imgbruno:hover + .pbruno {
+      pointer-events: none;
+      opacity: 1;
+      text-align: center;
+      color: yellow;
+      font-size: 35px;
+      font-family: "VT323", monospace; }
+      section .gallery-container .imgbruno:hover + .pbruno img {
+        width: 100px;
+        opacity: 1; }
+  section .gallery-container .pbruno {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   section .gallery-container img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  section .gallery-container .image-grid-col-2 {
-    grid-column: span 2; }
+
+section .image-grid-col-2 {
+  grid-column: span 2; }
 
 @media (max-width: 600px) {
   section .gallery-container {

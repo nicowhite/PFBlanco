@@ -242,17 +242,57 @@ section {
     gap: 1rem;
     margin: 2rem auto;
     width: 80%;
+        .img-gal-container {
+    position: relative;
+       
+        }
 
+        .imgbruno {
+          &:hover {
+            transition: all 1s ease;
+            opacity: 1;
+            filter: blur(3px) grayscale(100%);
+            +.pbruno {
+              pointer-events: none;
+              opacity: 1;
+              text-align: center;
+              color: yellow;
+              font-size: 35px;
+              font-family: $primary-title;
+     
+
+              img {
+                width: 100px;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .pbruno {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      // &:hover {
+      //   opacity: 0.5;
+      //   filter: grayscale(100%) blur(3px);
+        
+      }
+        
     }
     .image-grid-col-2 {
       grid-column: span 2;
     }
   }
-}
+
 
 // mobile monster
 
