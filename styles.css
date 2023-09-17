@@ -23,6 +23,9 @@ body {
     color: #fff; }
     .navbar .nav-link:hover {
       color: #7c3aed; }
+  .navbar .home-link {
+    font-weight: 800;
+    color: #7c3aed; }
 
 .animated-underline {
   position: relative;

@@ -11,12 +11,17 @@
     }
   }
 
+ 
   .nav-link {
     color: #fff;
 
     &:hover {
       color: $main-color;
     }
+  }
+  .home-link {
+    font-weight:800;
+    color: $main-color;
   }
 }
 
