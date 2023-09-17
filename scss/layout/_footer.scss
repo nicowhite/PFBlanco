@@ -1,6 +1,10 @@
 footer {
     margin-top: 10rem;
   
+    .copyrights {
+      text-align: center;
+      color: #fff;
+    }
     .form-container {
       margin: 2rem auto;
       max-width: 400px;
@@ -61,21 +65,20 @@ footer {
     }
   
     .media-icons {
-      bottom: 0;
-      right: 0;
-      padding: 10px;
+      padding: 15px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       width: auto;
+      margin-top: 2rem;
   
       a {
         margin: 0 5px;
       }
   
       img {
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
       }
     }
   }

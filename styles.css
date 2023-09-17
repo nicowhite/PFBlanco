@@ -58,6 +58,9 @@ body {
 
 footer {
   margin-top: 10rem; }
+  footer .copyrights {
+    text-align: center;
+    color: #fff; }
   footer .form-container {
     margin: 2rem auto;
     max-width: 400px;
@@ -101,18 +104,17 @@ footer {
         footer .form-container form .form-group input[type="submit"]:hover {
           background-color: #7c01b4; }
   footer .media-icons {
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+    padding: 15px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: auto; }
+    width: auto;
+    margin-top: 2rem; }
     footer .media-icons a {
       margin: 0 5px; }
     footer .media-icons img {
-      height: 20px;
-      width: 20px; }
+      height: 40px;
+      width: 40px; }
 
 .main-area {
   display: flex;
