@@ -158,9 +158,8 @@ footer {
         gap: 2px;
         border-style: none; }
 
-section .header {
-  display: flex;
-  justify-content: center;
+section .cards-titlecat {
+  text-align: center;
   margin-top: 90px;
   color: #fff; }
 
